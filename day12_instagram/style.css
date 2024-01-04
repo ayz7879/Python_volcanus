@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&family=Yanone+Kaffeesatz&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+h2 {
+    font-family: 'Style Script', cursive;
+}
+
+.side_bar {
+    display: flex;
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(77, 0, 32);
+    overflow-y: hidden;
+    border-right: 2px solid grey;
+    /* float: left; */
+}
+
+.side_menu {
+    /* display: flex;
+    flex-direction: column; */
+    padding: 25px;
+}
+
+.items {
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.fa-solid {
+    margin-right: 20px;
+}
+
+.instagram {
+    display: flex;
+}
+
+.post_section {
+    display: flex;
+}
+
+.images {
+    display: flex;
+    gap: 1.2rem;
+    left: 73px;
+    top: 13px;
+    position: relative;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px solid yellow;
+}
