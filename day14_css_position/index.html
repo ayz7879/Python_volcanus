@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .relative{
+            height: 60px;
+            width: 60px;
+            background-color: blue;
+            border-radius: 100%;
+            /* position: absolute; */
+            position: relative;
+            /* top: 0px; */
+            /* left: 50px; */
+        }
+        .absolute{
+            /* they move according to parent */
+            /* if div is relative absolute parent change */
+            height: 60px;
+            width: 60px;
+            background-color: yellow;
+            border-radius: 100%;
+            position: absolute;
+            top: 0px;
+            /* left: 50px; */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia fuga provident perferendis distinctio. Eius, laboriosam odio amet doloremque quisquam provident quae repellat itaque numquam voluptate, ratione nobis quod aut, molestias est maxime error ex quos eum suscipit animi dolore non. Expedita, beatae perferendis tempore eaque dignissimos libero unde quibusdam!</p>
+    <div class="relative">
+
+    </div>
+    <div class="absolute">
+
+    </div>
+</body>
+</html>
