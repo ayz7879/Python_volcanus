@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .main_img img{
+            height: 800px;
+            width: 600px;
+            border-radius: 30px;
+        }
+        .main_img{
+            display: flex;
+            /* justify-content: center; */
+            position: relative;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-image: url(https://cdn.pixabay.com/photo/2023/12/08/10/25/church-8437403_640.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+        }
+        .inside_img img{
+            height: 137px;
+            width: 137px;
+            border-radius: 100%;
+            border: 2px solid green;
+            padding: 5px;
+            background-color: white;
+            /* position: relative; */
+
+        }
+        .main_img2{
+            height: 800px;
+            width: 600px;
+            display: flex;
+            /* justify-content: center; */
+            position: relative;
+
+        }
+        .inside_img{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .text{
+            position: absolute;
+            bottom: 15px;
+            left: 70px;
+            font-size: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main_img">
+
+        <div class="main_img2">
+            <img src="https://cdn.pixabay.com/photo/2023/11/02/16/49/cat-8361048_1280.jpg" alt="">
+            <div class="inside_img">
+                <img src="https://cdn.pixabay.com/photo/2023/10/05/16/23/bird-8296358_640.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Add to Story</h3>
+            </div>
+        </div>
+        <div class="main_img2">
+            <img src="https://cdn.pixabay.com/photo/2023/11/02/16/49/cat-8361048_1280.jpg" alt="">
+            <div class="inside_img">
+                <img src="https://cdn.pixabay.com/photo/2023/10/05/16/23/bird-8296358_640.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Tom Russo</h3>
+            </div>
+        </div>
+        <div class="main_img2">
+            <img src="https://cdn.pixabay.com/photo/2023/11/02/16/49/cat-8361048_1280.jpg" alt="">
+            <div class="inside_img">
+                <img src="https://cdn.pixabay.com/photo/2023/10/05/16/23/bird-8296358_640.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Betty Chen</h3>
+            </div>
+        </div>
+        <div class="main_img2">
+            <img src="https://cdn.pixabay.com/photo/2023/11/02/16/49/cat-8361048_1280.jpg" alt="">
+            <div class="inside_img">
+                <img src="https://cdn.pixabay.com/photo/2023/10/05/16/23/bird-8296358_640.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Dennis Han</h3>
+            </div>
+        </div>
+        <div class="main_img2">
+            <img src="https://cdn.pixabay.com/photo/2023/11/02/16/49/cat-8361048_1280.jpg" alt="">
+            <div class="inside_img">
+                <img src="https://cdn.pixabay.com/photo/2023/10/05/16/23/bird-8296358_640.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Cynthia</h3>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
