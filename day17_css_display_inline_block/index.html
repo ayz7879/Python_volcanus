@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css_display_inline_block</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .container{
+            background-color: yellow;
+            width: 100%;
+            height: 40vh;
+            margin: auto;
+        }
+        .inline{
+            display: inline;
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+        .inline_block{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+        .img{
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            background-color: yellowgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* .volcanus > p{
+            color: yellow;
+        } */
+        /* div + p{
+            color: yellow;
+        } */
+        /* div ~ p{
+            color: yellow;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="inline">
+            Ram
+        </span>
+        <br>
+        <span class="inline_block">
+            laxman
+        </span>
+    </div>
+    <div class="img">
+        <img style="height: 400px; width: 400px;" src="https://cdn.pixabay.com/photo/2024/01/12/21/23/cortina-dampezzo-8504755_640.jpg" alt="">
+    </div>
+
+    <!-- combinatores -->
+    <div class="volcanus">
+        <p>Gourav</p>
+        <p>Ashish</p>
+        <section>
+            <p>anurag</p>
+        </section>
+        <p>sahil</p>
+        <p>anurag</p>
+    </div>
+    <p>superman</p>
+    <p>superman</p>
+    <p>superman</p>
+    <p>superman</p>
+    <div class="volcanus">
+        <p>Gourav</p>
+        <p>Ashish</p>
+        <section>
+            <p>anurag</p>
+        </section>
+        <p>sahil</p>
+        <p>anurag</p>
+    </div>
+    
+    <!-- div.navbar>.left>.right  -->
+    <div class="navbar">
+        <div class="left">
+            <div class="right">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
