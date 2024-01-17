@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Display_Grid</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .grid-container{
+            display: grid;
+            /* grid-template-columns: 25% 25% 25%; */
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(99, 9, 99);
+        }
+        .item-list{
+            /* height: 100px;
+            width: 100px; */
+            background-color: yellow;
+            margin: 5px;
+            font-size: 5rem;
+            color: black;
+            
+        }
+        .item-list:nth-child(1){
+            background-color: blue;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item-list:nth-child(2){
+            background-color: blue;
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            grid-column: 1/4;
+        }
+        .item-list:nth-child(9){
+            background-color: blue;
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            /* grid-column: 2/4;
+            grid-row: 5/7; */
+            grid-area: 1/2/5/6;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item-list">1</div>
+        <div class="item-list">2</div>
+        <div class="item-list">3</div>
+        <div class="item-list">4</div>
+        <div class="item-list">5</div>
+        <div class="item-list">6</div>
+        <div class="item-list">7</div>
+        <div class="item-list">8</div>
+        <div class="item-list">9</div>
+        <div class="item-list">10</div>
+        <div class="item-list">11</div>
+        <div class="item-list">12</div>
+        <div class="item-list">13</div>
+        <div class="item-list">14</div>
+        <div class="item-list">15</div>
+    </div>
+</body>
+</html>
