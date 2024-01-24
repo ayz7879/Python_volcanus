@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .box{
+            height: 10rem;
+            width: 10rem;
+            position: relative;
+            background-color: orangered;
+            animation-name: box;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes box {
+            /* from{
+                background-color: orangered;
+            }
+            to{
+                background-color: blue;
+                height: 14rem;
+                width: 14rem;
+            } */
+            0%{
+                /* background-color: aqua; */
+                /* /* position: relative; */
+                left: 0px;
+            }
+            25%{
+                background-color: chartreuse;
+                left: 500px;
+                top: 0px;
+            }
+            50%{
+                background-color: blueviolet;
+                top: 500px;
+                left: 500px;
+            }
+            75%{
+                background-color: blanchedalmond;
+                left: 0;
+                top: 500px;
+            }
+            100%{
+                background-color: wheat;
+                top: 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
