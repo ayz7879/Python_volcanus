@@ -26,10 +26,50 @@ body{
 }
 .post_section{
     width: calc(100% - 40%);
-    background-color: var(--secondary-bgColor);
+    /* background-color: var(--danger-bgColor); */
     height: 100vh;
 
 }
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.top_left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.top_left .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border_item{
+    display: flex;
+    justify-content: space-around;
+}
+.border_item .item{
+    /* background-color: blue; */
+    width: 45%;
+    text-align: center;
+}
+.border_item .item:hover{
+    background-color: rgb(92, 91, 91);
+    /* border-width: 10%; */
+    border-bottom: 1px solid white;
+}
+.border_item .item{
+    /* border-width: 10%; */
+    border-bottom: 1px solid white;
+}
+
+.border_item div{
+    padding: 15px;
+}
+
+
 .right_side_bar{
     width: 20%;
     background-color: var(--warning-bgColor);
