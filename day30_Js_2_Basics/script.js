@@ -33,6 +33,12 @@
 // console.log(number1 + number2);
 // console.log(number1++, ++number1);
 
-const number = "20";
-console.log(number === 20);
-console.log(typeof number);
+// const number = "20";
+// console.log(number === 20);
+// console.log(typeof number);
+let age = 10;
+if (age < 20) {
+  console.log("You can drive");
+} else {
+  console.log("You cant drive");
+}
