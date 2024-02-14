@@ -56,7 +56,3 @@
 //   }
 // };
 // palindrome("yadav");
-
-
-
-
