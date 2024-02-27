@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>time</h1>
+
+    <script>
+      
+
+      setInterval(()=>{
+        const date = new Date();
+      const currentDate = date.getDate();
+      const currentDay = date.getDay();
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1;
+      const hour = date.getHours();
+      const minute = date.getMinutes();
+      const second = date.getSeconds();
+      console.log("hello world");
+
+      let heading = document.querySelector("h1");
+
+      heading.innerHTML = `${hour}-${minute}-${second}`;
+      }, 1000)
+    </script>
+  </body>
+</html>
