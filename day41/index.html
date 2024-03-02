@@ -1,0 +1,140 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .move{
+            height: 10rem;
+            width: 10rem;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="move">
+        <h2>div</h2>
+    </div>
+    <button class="movebtn">move</button>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+<!-- =======================2 que========= -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>darkmode_lightmode</title>
+</head>
+<body>
+    <button class="dark">Dark Mode</button>
+    <button class="light">light Mode</button>
+    <script>
+        document.querySelector(".dark").addEventListener("click", ()=>{
+            document.querySelector("body").style.backgroundColor = "black"
+            document.querySelector("body").style.color = "white"
+        })
+        document.querySelector(".light").addEventListener("click", ()=>{
+            document.querySelector("body").style.backgroundColor = "white"
+            document.querySelector("body").style.color = "black"
+        })
+    </script>
+</body>
+</html> -->
+
+
+<!-- =============================que3====================== -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .clickbtn{
+            display: flex;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label  for="">Enter the first number</label>
+        <input class="firstval" type="text">
+    </div>
+    <div class="container">
+        <label  for="">Enter the second number</label>
+        <input class="secondval" type="text">
+    </div>
+    <div class="clickbtn">
+        <button class="add">Add</button>
+        <button class="subtract">subtract</button>
+        <button class="multiply">multiply</button>
+        <button class="divide">divide</button>
+    </div>
+
+    <script>
+        let add = document.querySelector(".add")
+        add.addEventListener("click",()=>{
+            let num1 = document.querySelector(".firstval")
+            let num2 = document.querySelector(".secondval")
+            let h1 = document.createElement("h1")
+            h1.innerHTML = parseInt(num1.value) + parseInt(num2.value)
+            document.querySelector("body").append(h1)
+
+        })
+        let subtract = document.querySelector(".subtract")
+        subtract.addEventListener("click",()=>{
+            let num1 = document.querySelector(".firstval")
+            let num2 = document.querySelector(".secondval")
+            let h1 = document.createElement("h1")
+            h1.innerHTML = parseInt(num1.value) - parseInt(num2.value)
+            document.querySelector("body").append(h1)
+
+        })
+        let multiply = document.querySelector(".multiply")
+        multiply.addEventListener("click",()=>{
+            let num1 = document.querySelector(".firstval")
+            let num2 = document.querySelector(".secondval")
+            let h1 = document.createElement("h1")
+            h1.innerHTML = parseInt(num1.value) * parseInt(num2.value)
+            document.querySelector("body").append(h1)
+
+        })
+        let divide = document.querySelector(".divide")
+        divide.addEventListener("click",()=>{
+            let num1 = document.querySelector(".firstval")
+            let num2 = document.querySelector(".secondval")
+            let h1 = document.createElement("h1")
+            h1.innerHTML = parseInt(num1.value) / parseInt(num2.value)
+            document.querySelector("body").append(h1)
+
+        })
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
