@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOM_methods</title>
+  </head>
+  <body>
+    <h1>Visit websites.com</h1>
+    <label for="">Enter your domain</label>
+    <input type="text" class="input" />
+    <input type="submit" value="Open" class="btn" />
+    <!-- <script src="script.js"></script> -->
+    <h1 class="time"></h1>
+    <button class="timeout">timeout</button>
+    <button class="timeinterval">timeinterval</button>
+    <script>
+      document.querySelector(".btn").addEventListener("click", () => {
+        let inputVal = document.querySelector(".input").value;
+
+        // window.alert(`are you sure want to open ${inputVal}.com`)
+        if (
+          window.confirm(`are you sure want to open ${inputVal}.com`) == true
+        ) {
+          window.location.assign(`https://www.${inputVal}.com`);
+        } else {
+          window.alert("ok yhi raho chutiyo");
+        }
+      });
+
+      let timeout = document.querySelector(".timeout")
+      timeout.addEventListener(
+        "click",
+        setTimeout(() => {
+          document.querySelector(
+            ".time"
+          ).innerHTML = `we are learning setTimeout function right now`;
+        },2000)
+      );
+    </script>
+  </body>
+</html>
