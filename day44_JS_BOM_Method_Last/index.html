@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOM remaining methods</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Set Time Out</button>
+    <button id="btn2">Set Interval</button>
+    <h1 class="time"></h1>
+
+    <script>
+      document.querySelector("#btn1").addEventListener("click", () => {
+        setTimeout(() => {
+          document.querySelector(".time").innerHTML =
+            `${localStorage.getItem("Hero")}`;
+        }, 1000);
+      });
+      document.querySelector("#btn2").addEventListener("click", () => {
+        setInterval(() => {
+            let time = new Date()
+          document.querySelector(".time").innerHTML = `${time.toLocaleTimeString()}`;
+        }, 1000);
+      });
+      const item = {
+        brandName:"iphone",
+        price:'100000',
+        modal:'iphone 15',
+      }
+      localStorage.setItem('phone', item)
+      localStorage.setItem('Hero', "superman")
+    //   localStorage.getItem(hero)
+    </script>
+  </body>
+</html>
