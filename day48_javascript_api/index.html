@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        color: white;
+      }
+      .input {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+      }
+      .input input {
+        width: 40%;
+        border-radius: 1rem;
+        border: none;
+        font-size: 2rem;
+        padding-left: 1rem;
+      }
+      .images {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+      }
+      .images img {
+        width: 300px;
+        height: 300px;
+        border: 2px solid antiquewhite;
+        cursor: pointer;
+      }
+      .images img:hover {
+        transform: scale(1.2);
+        transition: 5s;
+        rotate: 360deg;
+      }
+      .btn {
+        padding: 0 5rem;
+        margin-left: 1rem;
+        border-radius: 1rem;
+        border: none;
+        font-size: 2rem;
+        background-color: darkred;
+        color: white;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: aquamarine;
+        color: black;
+      }
+      h2 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-size: clamp(24px, 4vw, 40px);
+      }
+      @media screen and (max-width: 712px) {
+        .btn {
+          padding: 0rem 2rem;
+          width: 50%;
+          margin-top: 1rem;
+        }
+        .input {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        .value {
+          width: 800px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Images search by Ashish_yadav</h2>
+    <div class="input">
+      <input class="value" type="text" />
+      <button class="btn">Search</button>
+    </div>
+
+    <div class="images"></div>
+
+    <script>
+      let value = "sexy girl";
+      document.querySelector(".btn").addEventListener("click", () => {
+        value = document.querySelector(".value").value;
+        showData();
+      });
+      const fetchImage = async () => {
+        const response = await fetch(
+          `https://api.pexels.com/v1/search?query=${value}&per_page=80`,
+          {
+            headers: {
+              Authorization:
+                "32RbjC9489RT7tkziFOgH7wbZStsOVRHrO5zPRQJIDuhrndl03Opu1DE",
+            },
+          }
+        );
+        const data = await response.json();
+        // console.log(data.photos);
+        return data.photos;
+      };
+
+      const showData = async () => {
+        const data = await fetchImage();
+        let html = "";
+        data.forEach((e) => {
+          html += `
+            <img src="${e.src.medium}" alt="">`;
+        });
+        document.querySelector(".images").innerHTML = html;
+      };
+      showData();
+    </script>
+  </body>
+</html>
